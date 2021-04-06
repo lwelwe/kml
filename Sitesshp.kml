@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Sites.shp</name>
+	<open>1</open>
+	<Schema name="Sites" id="S_Sites_SSIDSSISD">
+		<SimpleField type="long" name="OID_"><displayName>&lt;b&gt;OID_&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Name"><displayName>&lt;b&gt;Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="FolderPath"><displayName>&lt;b&gt;FolderPath&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="long" name="SymbolID"><displayName>&lt;b&gt;SymbolID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="AltMode"><displayName>&lt;b&gt;AltMode&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Base"><displayName>&lt;b&gt;Base&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Snippet"><displayName>&lt;b&gt;Snippet&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="PopupInfo"><displayName>&lt;b&gt;PopupInfo&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="HasLabel"><displayName>&lt;b&gt;HasLabel&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="long" name="LabelID"><displayName>&lt;b&gt;LabelID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Soil_Unit"><displayName>&lt;b&gt;Soil_Unit&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Rainfall_m"><displayName>&lt;b&gt;Rainfall_m&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>OID_</b></td><td>$[Sites/OID_]</td></tr>
+  <tr><td><b>Name</b></td><td>$[Sites/Name]</td></tr>
+  <tr><td><b>FolderPath</b></td><td>$[Sites/FolderPath]</td></tr>
+  <tr><td><b>SymbolID</b></td><td>$[Sites/SymbolID]</td></tr>
+  <tr><td><b>AltMode</b></td><td>$[Sites/AltMode]</td></tr>
+  <tr><td><b>Base</b></td><td>$[Sites/Base]</td></tr>
+  <tr><td><b>Snippet</b></td><td>$[Sites/Snippet]</td></tr>
+  <tr><td><b>PopupInfo</b></td><td>$[Sites/PopupInfo]</td></tr>
+  <tr><td><b>HasLabel</b></td><td>$[Sites/HasLabel]</td></tr>
+  <tr><td><b>LabelID</b></td><td>$[Sites/LabelID]</td></tr>
+  <tr><td><b>Soil_Unit</b></td><td>$[Sites/Soil_Unit]</td></tr>
+  <tr><td><b>Rainfall_m</b></td><td>$[Sites/Rainfall_m]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>OID_</b></td><td>$[Sites/OID_]</td></tr>
+  <tr><td><b>Name</b></td><td>$[Sites/Name]</td></tr>
+  <tr><td><b>FolderPath</b></td><td>$[Sites/FolderPath]</td></tr>
+  <tr><td><b>SymbolID</b></td><td>$[Sites/SymbolID]</td></tr>
+  <tr><td><b>AltMode</b></td><td>$[Sites/AltMode]</td></tr>
+  <tr><td><b>Base</b></td><td>$[Sites/Base]</td></tr>
+  <tr><td><b>Snippet</b></td><td>$[Sites/Snippet]</td></tr>
+  <tr><td><b>PopupInfo</b></td><td>$[Sites/PopupInfo]</td></tr>
+  <tr><td><b>HasLabel</b></td><td>$[Sites/HasLabel]</td></tr>
+  <tr><td><b>LabelID</b></td><td>$[Sites/LabelID]</td></tr>
+  <tr><td><b>Soil_Unit</b></td><td>$[Sites/Soil_Unit]</td></tr>
+  <tr><td><b>Rainfall_m</b></td><td>$[Sites/Rainfall_m]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>Sites</name>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Sites_SSIDSSISD">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Al Badiah Al Shamaliyah</SimpleData>
+					<SimpleData name="FolderPath">Al Badiah Al Shamaliyah_New</SimpleData>
+					<SimpleData name="SymbolID">0</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"></SimpleData>
+					<SimpleData name="HasLabel">-1</SimpleData>
+					<SimpleData name="LabelID">0</SimpleData>
+					<SimpleData name="Soil_Unit">WAY</SimpleData>
+					<SimpleData name="Rainfall_m">92</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.68406946122157,32.12993625451321,113.3779048165306</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Sites_SSIDSSISD">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Al Hussainyyat</SimpleData>
+					<SimpleData name="FolderPath">Al Hussainyyat_New</SimpleData>
+					<SimpleData name="SymbolID">0</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"></SimpleData>
+					<SimpleData name="HasLabel">-1</SimpleData>
+					<SimpleData name="LabelID">0</SimpleData>
+					<SimpleData name="Soil_Unit">THE</SimpleData>
+					<SimpleData name="Rainfall_m">70</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.34263890635757,32.25724736568991,112.3082959344611</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Sites_SSIDSSISD">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Al Lajoun</SimpleData>
+					<SimpleData name="FolderPath">Al Lajoun_New</SimpleData>
+					<SimpleData name="SymbolID">0</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"></SimpleData>
+					<SimpleData name="HasLabel">-1</SimpleData>
+					<SimpleData name="LabelID">0</SimpleData>
+					<SimpleData name="Soil_Unit">BRA</SimpleData>
+					<SimpleData name="Rainfall_m">110</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>35.94223890715523,31.22118903245631,109.7153020352125</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Sites_SSIDSSISD">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Al-Azraq</SimpleData>
+					<SimpleData name="FolderPath">Al-Azraq_New</SimpleData>
+					<SimpleData name="SymbolID">0</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"></SimpleData>
+					<SimpleData name="HasLabel">-1</SimpleData>
+					<SimpleData name="LabelID">0</SimpleData>
+					<SimpleData name="Soil_Unit">SHA</SimpleData>
+					<SimpleData name="Rainfall_m">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.85304446122377,31.92000292136323,113.7507841000333</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Sites_SSIDSSISD">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Al-Ekaider</SimpleData>
+					<SimpleData name="FolderPath">Al-Ekaide_New</SimpleData>
+					<SimpleData name="SymbolID">0</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"></SimpleData>
+					<SimpleData name="HasLabel">-1</SimpleData>
+					<SimpleData name="LabelID">0</SimpleData>
+					<SimpleData name="Soil_Unit">BUR</SimpleData>
+					<SimpleData name="Rainfall_m">100</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.10199168436201,32.51040292187078,111.7325657717884</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Sites_SSIDSSISD">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Al-Qwerah</SimpleData>
+					<SimpleData name="FolderPath">Al-Qwerah_New</SimpleData>
+					<SimpleData name="SymbolID">0</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"></SimpleData>
+					<SimpleData name="HasLabel">-1</SimpleData>
+					<SimpleData name="LabelID">0</SimpleData>
+					<SimpleData name="Soil_Unit">YUT</SimpleData>
+					<SimpleData name="Rainfall_m">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>35.26809446345469,29.76332514323935,105.4306552065536</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Sites_SSIDSSISD">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Ma&apos;an</SimpleData>
+					<SimpleData name="FolderPath">Ma&apos;an_New</SimpleData>
+					<SimpleData name="SymbolID">0</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"></SimpleData>
+					<SimpleData name="HasLabel">-1</SimpleData>
+					<SimpleData name="LabelID">0</SimpleData>
+					<SimpleData name="Soil_Unit">RAF</SimpleData>
+					<SimpleData name="Rainfall_m">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>35.84712224081342,30.1789306991136,108.0636593876407</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffededed</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Sites_SSIDSSISD">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">New Dair Alla</SimpleData>
+					<SimpleData name="FolderPath">New Dair Alla_New</SimpleData>
+					<SimpleData name="SymbolID">0</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"></SimpleData>
+					<SimpleData name="HasLabel">-1</SimpleData>
+					<SimpleData name="LabelID">0</SimpleData>
+					<SimpleData name="Soil_Unit">GOR</SimpleData>
+					<SimpleData name="Rainfall_m">27</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>35.56938057386787,32.12539458792336,109.4502070927992</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
